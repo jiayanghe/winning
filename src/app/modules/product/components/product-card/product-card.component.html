@@ -14,9 +14,9 @@
 
     <div class="card-bottom">
         <div class="product-pricing-container">
-            <span class="price-container">{{product.price | currency:'USD':'symbol':'1.0-0'}}</span>
+            <span class="price-container">{{product.price | currency:'AUD':'symbol-narrow':'1.0-0'}}</span>
             <span class="discount-info-container">
-                {{(product.rrp - product.price) | currency:'USD':'symbol':'1.0-0'}} off RRP of {{product.rrp | currency:'USD':'symbol':'1.0-0'}}
+                {{(product.rrp - product.price) | currency:'AUD':'symbol-narrow':'1.0-0'}} off RRP of {{product.rrp | currency:'AUD':'symbol-narrow':'1.0-0'}}
             </span>
         </div>
         <div class="buttons-container">
