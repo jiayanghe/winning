@@ -1,6 +1,9 @@
-.list-container {
+.wrapper {
     padding: 2rem;
     background: #F0F0F3;
+}
+
+.list-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-row-gap: 1.5rem;
