@@ -1,4 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { BootstrapToastModule } from 'src/app/modules/bootstrap-toast/bootstrap-toast.module';
+import { BootstrapToastService } from 'src/app/modules/bootstrap-toast/bootstrap-toast.service';
 import { Product } from '../../product.interface';
 
 @Component({
@@ -8,11 +11,26 @@ import { Product } from '../../product.interface';
 })
 export class ProductCardComponent implements OnInit {
 
-  @Input() product: Product | undefined
+  // @ViewChild('addProductModal', {static: false}) addProductModal: TemplateRef<NgbModal> | undefined
 
-  constructor() { }
+  @Input() product: Product | undefined
+  showToastMessage = false
+  autohide = true
+
+  constructor(
+    private modalSvc: NgbModal,
+    private toastSvc: BootstrapToastService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  addProduct(modal: any) {
+    this.modalSvc.open(modal).result.then((result) => {
+      if (result) {
+        this.toastSvc.showSuccess(`${this.product ? this.product.name : null} has been added to the cart`)
+      }
+    });
   }
 
 }

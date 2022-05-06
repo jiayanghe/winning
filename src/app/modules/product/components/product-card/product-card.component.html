@@ -8,11 +8,32 @@
 
     <div class="card-bottom">
         <div class="product-pricing-container">
-            <span class="price-container">{{product.price | currency}}</span>
+            <span class="price-container">{{product.price | currency:'AUD':'symbol':'1.0-0'}}</span>
             <span class="discount-info-container">
-                {{(product.rrp - product.price) | currency}} off RRP of {{product.rrp | currency}}
+                {{(product.rrp - product.price) | currency:'AUD':'symbol':'1.0-0'}} off RRP of {{product.rrp | currency:'AUD':'symbol':'1.0-0'}}
             </span>
+        </div>
+        <div class="buttons-container">
+            <button type="button" class="add-to-cart-btn" (click)="addProduct(addProductModal)">Add to Cart</button>
+            <button type="button" class="compare-btn">Compare</button>
         </div>
     </div>
     
 </div>
+
+<ng-template #addProductModal let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Add this product to cart?</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')">X</button>
+    </div>
+    <div class="modal-body">
+        <div class="modal-product-container" *ngIf="product">
+            <img class="modal-product-image" [src]="product.image" [title]="product.name" height="200" width="200">
+            <span>{{product.name}}</span>
+        </div>
+        
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close(true)">Add</button>
+    </div>
+</ng-template>

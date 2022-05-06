@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BootstrapToastModule } from './modules/bootstrap-toast/bootstrap-toast.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    BootstrapToastModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,9 @@
 .product-card {
     background: white;
-    height: 330px;
-    width: 230px;
+    height: 420px;
+    width: 270px;
     border-radius: 5px;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .card-top {
@@ -31,7 +31,7 @@
 
 .price-container {
     color: green;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -40,3 +40,35 @@
     color: red;
 }
 
+.buttons-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+}
+
+.add-to-cart-btn {
+    background: #52a71d;
+    color: white;
+    padding: .5rem 1rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.compare-btn {
+    background: white;
+    color: #908f9a;
+    border: 1px solid #f2f2f2;
+    padding: .5rem 1rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.modal-product-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
