@@ -1,6 +1,5 @@
-import { Component, Input, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { BootstrapToastModule } from 'src/app/modules/bootstrap-toast/bootstrap-toast.module';
 import { BootstrapToastService } from 'src/app/modules/bootstrap-toast/bootstrap-toast.service';
 import { Product } from '../../product.interface';
 

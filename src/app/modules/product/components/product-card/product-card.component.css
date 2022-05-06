@@ -45,7 +45,7 @@
 }
 
 .price-container {
-    color: green;
+    color: #54a81f;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -61,27 +61,24 @@
     justify-content: center;
 }
 
-button {
+.add-to-cart-btn, .compare-btn {
     border: none;
+    padding: .5rem 1rem;
+    width: 50%;
 }
-
 .add-to-cart-btn {
     background: #52a71d;
     color: white;
-    padding: .5rem 1rem;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    font-weight: 400;
 }
 
 .compare-btn {
     background: white;
     color: #908f9a;
     border: 1px solid #e0dede;
-    padding: .5rem 1rem;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    font-weight: 400;
 }
 
 .modal-product-container {
