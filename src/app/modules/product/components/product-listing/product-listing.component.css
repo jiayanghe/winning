@@ -1,7 +1,42 @@
-.wrapper {
+.list-container {
+    padding: 2rem;
     background: #F0F0F3;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-row-gap: 1rem;
+    grid-row-gap: 1.5rem;
     grid-column-gap: 1rem;
+}
+
+.product-card-wrapper {
+    display: flex;
+    justify-content: center;
+}
+  
+@media all and (max-width: 649px) {
+    .list-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media all and (min-width: 650px) and (max-width: 999px) {
+    .list-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (min-width: 1000px) and (max-width: 1319px) {
+    .list-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+  
+@media all and (min-width: 1320px) and (max-width: 1649px) {
+    .list-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+  
+@media all and (min-width: 1650px) {
+    .list-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
