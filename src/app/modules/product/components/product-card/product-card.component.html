@@ -1,0 +1,18 @@
+<div class="product-card" *ngIf="product">
+    <div class="card-top">
+        <img class="product-image" [src]="product.image" [title]="product.name" height="200" width="200">
+        <span>{{product.name}}</span>
+    </div>
+
+    <hr class="product-card-divider">
+
+    <div class="card-bottom">
+        <div class="product-pricing-container">
+            <span class="price-container">{{product.price | currency}}</span>
+            <span class="discount-info-container">
+                {{(product.rrp - product.price) | currency}} off RRP of {{product.rrp | currency}}
+            </span>
+        </div>
+    </div>
+    
+</div>

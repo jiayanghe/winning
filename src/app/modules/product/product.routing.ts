@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { ProductListingComponent } from "./components/product-listing/product-listing.component";
+import { ProductListResolver } from "./resolvers/product-list.resolver";
 
 
 
@@ -12,7 +13,10 @@ const routes: Routes = [
     },
     {
       path: 'listing',
-      component: ProductListingComponent
+      component: ProductListingComponent,
+      resolve: {
+        products: ProductListResolver
+      }
     },
   ];
 
