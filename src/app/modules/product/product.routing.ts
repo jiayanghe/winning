@@ -7,9 +7,9 @@ import { ProductListResolver } from "./resolvers/product-list.resolver";
 
 const routes: Routes = [
     {
-        path: '',
-        pathMatch: 'full',
-        redirectTo: 'listing'
+      path: '',
+      pathMatch: 'full',
+      redirectTo: 'listing'
     },
     {
       path: 'listing',
