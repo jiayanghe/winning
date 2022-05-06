@@ -2,7 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
 
-Bootstrap Modal and Toast are used to display modal and message when clicking 'Add to Cart' button.
+Bootstrap Modal and is used to display modal when clicking 'Add to Cart' button.
+
+Bootstrap Toast is used to display confirmation message when user confirm adding product to cart in the modal.
 
 Supports device with minimum screen width of 320px;
 
