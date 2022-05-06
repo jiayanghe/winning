@@ -1,5 +1,5 @@
 <div class="product-card">
-    
+
     <div class="card-top">
         <img class="product-image" [src]="product.image" [title]="product.name" height="200" width="200">
         <div class="product-name-container">
@@ -30,14 +30,13 @@
 <ng-template #addProductModal let-modal>
     <div class="modal-header">
       <h4 class="modal-title" id="modal-basic-title">Add this product to cart?</h4>
-      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')">X</button>
+      <button type="button" class="modal-close-btn" aria-label="Close" (click)="modal.dismiss('Cross click')">X</button>
     </div>
     <div class="modal-body">
         <div class="modal-product-container">
             <img class="modal-product-image" [src]="product.image" [title]="product.name" height="200" width="200">
             <span>{{product.name}}</span>
         </div>
-        
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-outline-dark" (click)="modal.close(true)">Add</button>

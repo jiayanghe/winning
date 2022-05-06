@@ -81,6 +81,17 @@
     border-bottom-right-radius: 5px;
 }
 
+.modal-close-btn {
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.modal-close-btn:hover {
+    color: red;
+}
+
 .modal-product-container {
     display: flex;
     align-items: center;
