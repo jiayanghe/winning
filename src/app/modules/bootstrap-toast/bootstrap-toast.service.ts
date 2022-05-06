@@ -14,9 +14,6 @@ export class BootstrapToastService {
   show(textOrTpl: string | TemplateRef<any>, classNames: string, header = this.defaultHeader, options: any = {}) {
     this.header = header
     this.toasts.push({ textOrTpl, delay: this.defaultDelay, classname: classNames, ...options });
-    console.log(this.toasts);
-    
-    
   }
 
   showSuccess(textOrTpl: string | TemplateRef<any>, header = this.defaultHeader, options: any = {}) {

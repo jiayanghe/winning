@@ -1,7 +1,12 @@
-<div class="product-card" *ngIf="product">
+<div class="product-card">
     <div class="card-top">
         <img class="product-image" [src]="product.image" [title]="product.name" height="200" width="200">
-        <span>{{product.name}}</span>
+        <div class="product-name-container">
+            <div class="product-name-wrapper" [title]="product.name">
+                {{product.name}}
+            </div>
+            
+        </div>
     </div>
 
     <hr class="product-card-divider">
@@ -27,7 +32,7 @@
       <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')">X</button>
     </div>
     <div class="modal-body">
-        <div class="modal-product-container" *ngIf="product">
+        <div class="modal-product-container">
             <img class="modal-product-image" [src]="product.image" [title]="product.name" height="200" width="200">
             <span>{{product.name}}</span>
         </div>

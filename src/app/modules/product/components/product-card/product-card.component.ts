@@ -11,9 +11,8 @@ import { Product } from '../../product.interface';
 })
 export class ProductCardComponent implements OnInit {
 
-  // @ViewChild('addProductModal', {static: false}) addProductModal: TemplateRef<NgbModal> | undefined
 
-  @Input() product: Product | undefined
+  @Input() product: Product
   showToastMessage = false
   autohide = true
 
@@ -28,7 +27,7 @@ export class ProductCardComponent implements OnInit {
   addProduct(modal: any) {
     this.modalSvc.open(modal).result.then((result) => {
       if (result) {
-        this.toastSvc.showSuccess(`${this.product ? this.product.name : null} has been added to the cart`)
+        this.toastSvc.showSuccess(`${this.product.name} has been added to the cart`)
       }
     });
   }
