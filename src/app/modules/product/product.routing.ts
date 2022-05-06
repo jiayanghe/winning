@@ -18,6 +18,10 @@ const routes: Routes = [
         products: ProductListResolver
       }
     },
+    {
+      path: '**',
+      redirectTo: '/not-found'
+    }
   ];
 
 @NgModule({
