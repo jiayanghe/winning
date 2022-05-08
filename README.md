@@ -8,7 +8,11 @@ Bootstrap Toast is used to display confirmation message when user confirm adding
 
 Supports device with minimum screen width of 320px;
 
+Dependency include bootstrap (only for the popup modal and toast message), and RxJs.
+
 ## Development server
+
+Run npm install to install dependencies needed.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
