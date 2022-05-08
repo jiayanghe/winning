@@ -8,7 +8,7 @@ Bootstrap Toast is used to display confirmation message when user confirm adding
 
 Supports device with minimum screen width of 320px;
 
-Dependency include bootstrap (only for the popup modal and toast message), and RxJs.
+Dependencies include bootstrap (only for the popup modal and toast message purposes), and RxJs.
 
 ## Development server
 
